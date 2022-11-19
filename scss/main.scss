@@ -1,0 +1,31 @@
+@import 'config';
+
+
+body {
+    background: $primary-color;    
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1;
+}
+
+.section1{
+  background-color: rgb(211, 207, 207);
+  padding-bottom:50px;
+}
+
+.img1{
+  @include transition-ease;
+  &:hover{
+   
+   transform: scale(2);
+  }
+}
+
+.img2{
+  padding-left: 100px;
+  @include transition-ease;
+  &:hover{
+    @include transition-rotate;
+  }
+}
+  

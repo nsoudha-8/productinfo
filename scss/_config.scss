@@ -1,0 +1,19 @@
+$primary-color:rgb(233, 207, 207);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+@mixin transition-rotate{
+    transform: rotate(360deg);
+}
+
+@mixin transition-ease {
+    transition:all 1s ease-in-out;
+}
+@mixin transition-skew {
+    transform: skew(45deg);    
+}
